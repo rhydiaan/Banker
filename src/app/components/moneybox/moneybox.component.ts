@@ -11,7 +11,7 @@ export class MoneyboxComponent {
   isClicked: boolean = false;
 
   constructor(){
-    console.log(this.amount)
+    
   }
 
 }
