@@ -1,5 +1,7 @@
 
 <div class="grid-container">
-    <app-moneybox *ngFor="let value of values" class="grid-item" [amount]="value" disabled></app-moneybox>
+    <button *ngFor="let value of values" class="grid-item">
+        <app-moneybox [amount]="value" disabled></app-moneybox>
+    </button>
 </div>
 
