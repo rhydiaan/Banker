@@ -1,0 +1,17 @@
+.offer {
+    padding-top: 3vh;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: #252525;
+}
+
+@media only screen and (max-width: 991px) {
+    .offer {
+        padding-top: 3vh;
+        font-family: 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        font-weight: bold;
+        color: #252525;
+    }
+}

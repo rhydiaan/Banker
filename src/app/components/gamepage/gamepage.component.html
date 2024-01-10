@@ -1,15 +1,20 @@
-<div class="grid-container">
-    <button 
+<div class="main-container">
+    <div class="grid-container">
+        <button 
 
-    *ngFor="let value of values; let index = index" 
-    class="grid-item" (click)="onClick(index)" 
-    [ngStyle]="{
-        'color': clickedBoxes[index].isClicked ? '#252525': '#797979',
-        'background-color': clickedBoxes[index].isClicked ? '#e7e7e7': '#d3d3d3'}">
+        *ngFor="let value of values; let index = index; let even = even" 
+        class="grid-item" (click)="onClick(index); banker.roundCalculator()" 
+        [ngStyle]="{
+            'color': clickedBoxes[index].isClicked ? '#252525': '#797979',
+            'background-color': clickedBoxes[index].isClicked ? '#e7e7e7': '#d3d3d3'}">
 
-        <app-moneybox [amount]="value" ></app-moneybox>
+            <app-moneybox [amount]="value"></app-moneybox>
 
-    </button>
+        </button>
 
+    </div>
+    <app-banker #banker></app-banker>
 </div>
+
+
 

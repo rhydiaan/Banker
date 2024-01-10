@@ -14,7 +14,6 @@
     
     .grid-item {
         background-color: #e7e7e7;
-        /* border: 0.3vh solid #7a1200; */
         border-radius: 6px;
         padding: 1vh;
         text-align: center;
@@ -23,7 +22,7 @@
         font-family: 'Trebuchet MS', sans-serif;
         font-weight: bold;
         color: #252525;
-        transition: font-size 0.1s, background-color 0.2s, border 0.5s  ;
+        transition: font-size 0.1s, background-color 0.2s, border 0.5s;
     }
 
     .grid-item:hover {
@@ -36,12 +35,11 @@
         width: 18vw;
         height: 5vh;
         font-family: 'Trebuchet MS', sans-serif;
-        font-size: medium ;
+        font-size: medium;
         font-weight: bold;
         color: #252525;
     }
 }
-
 
 @media only screen and (max-width: 991px) {
     .grid-container {
